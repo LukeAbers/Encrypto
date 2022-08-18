@@ -19,26 +19,23 @@ function encrypt() {
 }
 
 function decrypt() {
-	//	Make AJAX call
-	$.post( "action.php",  );
-	 $.ajax({
-			type: "POST",
-			url: '/action.php',
-			// Send private key and encrypted message from textareas
-			data: ({ privateKey: $('#privateKey').val(), eMsg: $('#encrypted').val() }),
-			dataType: "html",
-			success: function(data) {
-				// Show response in alert
-				alert(data);
-				return data;
-			},
-			error: function() {
-				alert('Error occured');
-			}
-		});
-	}
+  //Make AJAX call
+  $.ajax({
+    type: "POST",
+    url: '/action.php',
+    // Send private key and encrypted message from textareas
+    data: ({ privateKey: $('#privateKey').val(), eMsg: $('#encrypted').val() }),
+    dataType: "html",
+    success: function(data) {
+      // Show response in alert
+      alert(data);
+    },
+    error: function() {
+      alert('Error occured');
+    }
+  });
+}
 </script>
-
 
 <?php
 // From serverside create keypair

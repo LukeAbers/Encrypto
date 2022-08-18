@@ -1,7 +1,6 @@
 <title>JavaScript RSA Encryption Demo</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="jsencrypt.min.js"></script>
-<script type="text/javascript"></script>
 
 <script>
 function encrypt() {
